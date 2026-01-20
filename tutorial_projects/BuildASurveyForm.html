@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Random survey to collect your information (voluntary)</p>
+  <form id="survey-form">
+
+    <fieldset>
+      <legend>Personal Information</legend>
+      <div>
+        <label id="name-label" for="name">Name</label>
+        <input id="name" type="text" required placeholder="Enter your name">
+      </div>
+
+      <div>
+        <label id="email-label" for="email">Email</label>
+        <input id="email" type="email" required placeholder="Enter your age">
+      </div>
+
+      <div>
+        <label id="number-label" for="number">Age (Optional)</label>
+        <input id="number" type="number" placeholder="Age" min="0" max="100">
+      </div>
+    </fieldset>  
+
+    <fieldset>
+      <legend>Are you a dog or cat person?</legend>
+      <div>
+        <label for="pets-select">Choose a pet:</label>
+        <select id="dropdown">
+          <option value="">--Please choose an option--</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Choose which melon you would like the most! (Select One)</legend>
+      <div>
+        <input type="radio" id="honeydew" name="melon" value="honeydew">
+        <label for="honeydew">honeydew</label>
+      </div>
+
+      <div>
+        <input type="radio" id="cantaloupe" name="melon" value="cantaloupe">
+        <label for="cantaloupe">cantaloupe</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>What is your favorite tea?</legend>
+
+      <div>
+        <input type="checkbox" id="black-tea" name="tea" value="black-tea">
+        <label for="black-tea">Black Tea</label>
+
+        <input type="checkbox" id="jasmine-tea" name="tea" value="jasmine-tea">
+        <label for="jasmine-tea">Jasmine Tea</label>
+
+        <input type="checkbox" id="oolong-tea" name="tea" value="oolong-tea">
+        <label for="Oolong-tea">Oolong Tea</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Additional Comments</legend>
+      <textarea id="comments" name="comments" rows="5" cols="33" placeholder="Enter your comment here..."></textarea>
+    </fieldset>
+
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</body>
+</html>
